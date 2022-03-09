@@ -8,24 +8,29 @@
 4. put -> /user/likes update de likes array on the user document.
 5. get -> /oauth/github github callback for OAuth.
 
+- The application has a MongoDB database in [https://cloud.mongodb.com/](https://cloud.mongodb.com/) to save the user's data.
 
 # Installation
 
 1. clone the repo.
 
-2. install node packages:
+2. Go to helloBuild_login_server
+
+`cd helloBuild_login_server`
+
+3. install node packages:
 
 `npm install`
 
-3. Install nodemon to run the server:
+4. Install nodemon to run the server:
 
 `npm install nodemon --save`
 
-4. create a .env file under login_server folder with this content:
+5. create a .env file under login_server folder with this content:
 
 ```markdown
 MONGODB_URI=mongodb+srv://sebasarboleda:fyn9p7a4vXUp9nd@cluster0.tp0w7.mongodb.net/helloBuild?retryWrites=true&w=majority
 ```
-5. run the server:
+6. run the server:
 
-`nondemon server.js`
+`nodemon server.js`

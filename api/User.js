@@ -279,10 +279,12 @@ router.get("/oauth/github", async (req, res) => {
 
     //const token = jwt.sign(githubToken.access_token, secret);
 
-    res.cookie(COOKIE_NAME, githubToken.access_token, {
-        httpOnly: false,
-        domain: "localhost",
-    });
+    //{
+    //    httpOnly: false,
+    //    domain: "localhost",
+    //}
+
+    res.cookie(COOKIE_NAME, githubToken.access_token);
 
     res.redirect(`http://localhost:3000/dashboard`);
     

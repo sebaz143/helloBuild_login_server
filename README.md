@@ -26,7 +26,7 @@
 
 `npm install nodemon --save`
 
-5. create a .env file under login_server folder with this content:
+5. create a .env file under helloBuild_login_server folder with this content:
 
 ```markdown
 MONGODB_URI=mongodb+srv://sebasarboleda:fyn9p7a4vXUp9nd@cluster0.tp0w7.mongodb.net/helloBuild?retryWrites=true&w=majority
